@@ -40,9 +40,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate , UITableViewD
 //            getAddressFromLocation(location: location)
     }
     
-    /* --------------------  BUTTON FOR GETTING CURRENT LOCATION'S TEMP + CONDITIONS -------------------- */
-    
-    
     @IBAction func getLocation(_ sender: Any) {
         let locationStr = "\(self.lat!),\(self.lng!)"
         
@@ -75,8 +72,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate , UITableViewD
         }
     }
     
-    /* --------------------  BUTTON FOR TYPING CITY'S TEMP + CONDITIONS -------------------- */
-   
     @IBAction func getWeather(_ sender: Any) {
     let cityName = txtCity.text!
         
@@ -107,7 +102,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate , UITableViewD
         }
     }
     
-    /* handling table view & table view cell */
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arr.count
     }
@@ -121,28 +115,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate , UITableViewD
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
     }
-//    func getAddressFromLocation( location: CLLocation) {
-//        let clGeoCoder = CLGeocoder()
-//
-//        clGeoCoder.reverseGeocodeLocation(location) { placeMarks, error in
-//            if error != nil {
-//                print(error?.localizedDescription)
-//                return
-//            }
-//
-//            var address = ""
-//            guard let place = placeMarks?.first else { return }
-//
-//            if place.locality != nil {
-//                address += place.locality! +  ", "
-//            }
-//            if place.administrativeArea != nil {
-//                address += place.administrativeArea!
-//            }
-//
-//            print(address)
-//        }
-//    }
     
 
 }
