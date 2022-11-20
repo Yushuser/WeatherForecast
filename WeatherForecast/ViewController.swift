@@ -48,7 +48,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate , UITableViewD
         
         var url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/forecast?locations="
         url += locationStr
-        url += "&aggregateHours=24&unitGroup=us&shortColumnNames=false&contentType=json&key=AYQR6QM5KHFYVPH9M4EXXJUCC"
+        url += "&aggregateHours=24&unitGroup=us&shortColumnNames=false&contentType=json&key=YOURAPIKEY"
         
         AF.request(url).responseJSON { responseData in
             //print(responseData)
@@ -81,7 +81,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate , UITableViewD
     let cityName = txtCity.text!
         
         var url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/forecast?locations="
-        url += cityName + "&aggregateHours=24&unitGroup=us&shortColumnNames=false&contentType=json&key=AYQR6QM5KHFYVPH9M4EXXJUCC"
+        url += cityName + "&aggregateHours=24&unitGroup=us&shortColumnNames=false&contentType=json&key=YOURAPIKEY"
         
         AF.request(url).responseJSON { responseData in
             //print(responseData)
