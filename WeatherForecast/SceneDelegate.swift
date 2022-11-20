@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  WeatherForecast
 //
-//  Created by YUSHU WU on 11/19/22.
+//  Created by Lan Zheng on 11/19/22.
 //
 
 import UIKit

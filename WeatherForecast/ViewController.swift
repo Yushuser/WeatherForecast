@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  WeatherForecast
 //
-//  Created by YUSHU WU on 11/19/22.
+//  Created by Lan Zheng on 11/19/22.
 //
 
 import UIKit
@@ -45,7 +45,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate , UITableViewD
         
         var url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/forecast?locations="
         url += locationStr
-        url += "&aggregateHours=24&unitGroup=us&shortColumnNames=false&contentType=json&key=YOURAPIKEY"
+        url += "&aggregateHours=24&unitGroup=us&shortColumnNames=false&contentType=json&key=AYQR6QM5KHFYVPH9M4EXXJUCC"
         
         AF.request(url).responseJSON { responseData in
             //print(responseData)
@@ -76,7 +76,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate , UITableViewD
     let cityName = txtCity.text!
         
         var url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/forecast?locations="
-        url += cityName + "&aggregateHours=24&unitGroup=us&shortColumnNames=false&contentType=json&key=YOURAPIKEY"
+        url += cityName + "&aggregateHours=24&unitGroup=us&shortColumnNames=false&contentType=json&key=AYQR6QM5KHFYVPH9M4EXXJUCC"
         
         AF.request(url).responseJSON { responseData in
             //print(responseData)
