@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  WeatherForecast
 //
-//  Created by Lan Zheng on 11/19/22.
+//  Created by YUSHU WU on 11/19/22.
 //
 
 import UIKit
